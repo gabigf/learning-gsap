@@ -1,0 +1,25 @@
+const express = require('express');
+const path = require('path');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+  res.sendFile(path.resolve('views', 'index.html'));
+});
+
+router.get('/basic-tween', (req, res) => {
+  res.sendFile(path.resolve('views', 'basic-tween.html'));
+});
+
+router.get('/from-to', (req, res) => {
+  res.sendFile(path.resolve('views', 'from-to.html'));
+});
+
+router.get('/delay-repeat', (req, res) => {
+  res.sendFile(path.resolve('views', 'delay-repeat.html'));
+});
+
+router.get('/ease', (req, res) => {
+  res.sendFile(path.resolve('views', 'ease.html'));
+});
+
+module.exports = router;
