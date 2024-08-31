@@ -3,7 +3,7 @@ const path = require('path');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.sendFile(path.resolve('views', 'index.html'));
+  res.sendFile(path.resolve('views', 'home.html'));
 });
 
 router.get('/basic-tween', (req, res) => {
