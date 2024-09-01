@@ -5,14 +5,14 @@
 
 /* Color Variables */
 :root {
-  --primary-color: #fff; /* Blue */
-  --secondary-color: #2ecc71; /* Green */
-  --text-color: #333; /* Dark Gray */
-  --background-color: coral; /* Light Gray */
-  --heading-font: 'Arial', sans-serif;
-  --body-font: 'Arial', sans-serif;
+  --primary-color: #ff6347; /* Tomato: Warm, vibrant for primary elements */
+  --secondary-color: #6a5acd; /* SlateBlue: Cool contrast for secondary elements */
+  --accent-color: #ffd700; /* Gold: Bright, playful for accents and highlights */
+  --text-color: #2f4f4f; /* DarkSlateGray: Dark and readable for text */
+  --background-color: #f5f5dc; /* Beige: Soft, warm, and neutral background color */
+  --heading-font: 'Poppins', sans-serif; /* Modern, clean font for headings */
+  --body-font: 'Roboto', sans-serif; /* Professional, easy-to-read font for body text */
 }
-
 /* Box sizing */
 *,
 *::before,
@@ -58,18 +58,18 @@ p {
 
 /* Links */
 a {
-  color: var(--primary-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #fff;
 }
 
 /* Buttons */
 button {
-  background-color: var(--secondary-color);
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -80,7 +80,8 @@ button {
 }
 
 button:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 
 /* Form Elements */
