@@ -80,8 +80,8 @@ button {
 }
 
 button:hover {
-  background-color: var(--secondary-color);
-  color: #fff;
+  background-color: var(--text-color);
+  color:  var(--primary-color);
 }
 
 /* Form Elements */
