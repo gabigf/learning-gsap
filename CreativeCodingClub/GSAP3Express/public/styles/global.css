@@ -1,7 +1,4 @@
-/* global.css */
-
-/* Normalize or Reset CSS (use a CDN or add content here) */
-/* global.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Press+Start+2P&display=swap');
 
 /* Color Variables */
 :root {
@@ -10,8 +7,8 @@
   --accent-color: #ffd700; /* Gold: Bright, playful for accents and highlights */
   --text-color: #2f4f4f; /* DarkSlateGray: Dark and readable for text */
   --background-color: #f5f5dc; /* Beige: Soft, warm, and neutral background color */
-  --heading-font: 'Poppins', sans-serif; /* Modern, clean font for headings */
-  --body-font: 'Roboto', sans-serif; /* Professional, easy-to-read font for body text */
+  --pixel-font: 'Press Start 2P', sans-serif; /* Modern, clean font for headings */
+  --body-font: 'Nunito Sans', sans-serif; /* Professional, easy-to-read font for body text */
 }
 /* Box sizing */
 *,
@@ -41,7 +38,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
+  font-family: var(--pixel-font);
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
