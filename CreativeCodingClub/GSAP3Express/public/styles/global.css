@@ -2,13 +2,13 @@
 
 /* Color Variables */
 :root {
-  --primary-color: #ff6347; /* Tomato: Warm, vibrant for primary elements */
-  --secondary-color: #6a5acd; /* SlateBlue: Cool contrast for secondary elements */
-  --accent-color: #ffd700; /* Gold: Bright, playful for accents and highlights */
-  --text-color: #2f4f4f; /* DarkSlateGray: Dark and readable for text */
-  --background-color: #f5f5dc; /* Beige: Soft, warm, and neutral background color */
-  --pixel-font: 'Press Start 2P', sans-serif; /* Modern, clean font for headings */
-  --body-font: 'Nunito Sans', sans-serif; /* Professional, easy-to-read font for body text */
+  --primary-color: rgb(42, 51, 65);
+  --secondary-color: #6a5acd;
+  --accent-color: #f5f5f5;
+  --text-color: #000;
+  --background-color: #55c5e2;
+  --pixel-font: 'Press Start 2P', sans-serif;
+  --body-font: 'Nunito Sans', sans-serif;
 }
 /* Box sizing */
 *,
@@ -32,7 +32,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.2vw;
   height: 100vh;
 }
 
@@ -59,30 +59,29 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #fff;
-}
-
 /* Buttons */
 button {
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   color: var(--text-color);
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   cursor: pointer;
   border-radius: 0.25rem;
   font-family: var(--body-font);
   transition: background-color 0.3s ease;
   width: max-content;
+  font-size: 1.2rem;
+  border: 3px solid #5f5f5f;
 }
 
 button:hover {
-  background-color: var(--text-color);
-  color:  var(--primary-color);
+  background-color:  #6599ff;
+  color:  var(--accent-color);
+  border-color: #4b71e7;
 }
 
 /* Form Elements */
-input, textarea, select, button {
+input, textarea, select {
   font-family: inherit;
   font-size: inherit;
   margin: 0;
