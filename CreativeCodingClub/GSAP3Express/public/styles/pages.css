@@ -1,0 +1,8 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fred {
+  max-width: 10%;
+}
