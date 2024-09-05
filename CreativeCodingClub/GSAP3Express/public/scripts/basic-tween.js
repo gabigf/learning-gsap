@@ -1,5 +1,3 @@
-// const gsap = require('gsap');
-
 let tween = gsap.fromTo(
   '.fred',
   { x: 700, y: 400 },
