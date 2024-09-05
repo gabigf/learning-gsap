@@ -1,12 +1,4 @@
-let tween = gsap.fromTo(
-  '.fred',
-  { x: 700, y: 400 },
-  { x: 300, y: 200, duration: 3, scale: 2 }
-);
-
-tween.play();
-
-console.log(tween);
+let tween = gsap.to('.fred', { x: 300, duration: 3, scale: 2 });
 
 document.querySelector('.restart-button').onclick = () => {
   tween.restart();
