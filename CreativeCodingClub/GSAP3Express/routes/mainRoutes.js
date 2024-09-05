@@ -22,4 +22,8 @@ router.get('/ease', (req, res) => {
   res.sendFile(path.resolve('views', 'ease.html'));
 });
 
+router.get('/ease-rough', (req, res) => {
+  res.sendFile(path.resolve('views', 'ease-rough.html'));
+});
+
 module.exports = router;
