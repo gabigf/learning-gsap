@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .fred {
   max-width: 10%;
 }
