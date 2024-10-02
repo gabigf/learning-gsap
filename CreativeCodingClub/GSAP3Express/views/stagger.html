@@ -9,18 +9,26 @@
   <script src="/js/gsap.min.js"></script>
 </head>
 <body>
-  <h1>Basic Tween</h1>
+  <div class="page-container">
+    <div class="page-top">
+      <h1>Stagger</h1>
 
-  <button class="restart-button">Restart</button>
-  <button class="reverse-button">Reverse</button>
+      <div class="button-container">
+        <button class="restart-button">Restart</button>
+        <button class="reverse-button">Reverse</button>
+      </div>
+    </div>
 
-  <div class="image-container flex-row">
-    <img class="fred green" src="/images/fred.svg" />
-    <img class="fred pink" src="/images/fred-purple.svg" />
-    <img class="fred pink" src="/images/fred-blue.svg" />
-    <img class="fred pink" src="/images/fred-pink.svg" />
-    <img class="fred pink" src="/images/fred-orange.svg" />
-    <img class="fred pink" src="/images/fred-red.svg" />
+    <div class="animation-container">
+      <div class="image-container flex-row">
+        <img class="fred green" src="/images/fred.svg" />
+        <img class="fred pink" src="/images/fred-purple.svg" />
+        <img class="fred pink" src="/images/fred-blue.svg" />
+        <img class="fred pink" src="/images/fred-pink.svg" />
+        <img class="fred pink" src="/images/fred-orange.svg" />
+        <img class="fred pink" src="/images/fred-red.svg" />
+      </div>
+    </div>
   </div>
 
   <script src="/scripts/stagger.js" type="text/javascript"></script>
