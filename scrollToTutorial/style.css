@@ -108,8 +108,7 @@ img {
   animation-play-state: paused;
 }
 
-.scroller[data-direction="right"
-] {
+.scroller[data-direction="right"] {
   --_animation-direction: reverse;
 }
 
