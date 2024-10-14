@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 4rem;
-  /* background: #fff; */
   z-index: 999;
 }
 
@@ -24,14 +23,14 @@ a {
   font-size: 12px;
 }
 
-
 .logo {
   position: fixed;
-  top: 20px;
+  top: 50vh;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   padding: 1em;
   z-index: 1000;
+  width: 35vw;
 }
 
 .logo-container {
@@ -40,12 +39,12 @@ a {
 
 .landing-description {
   position: fixed;
-  top: 150px;
+  top: 65vh;
   left: 50%;
   transform: translateX(-50%);
   padding: 1em;
   z-index: 1000;
-  opacity: 0;
+  opacity: 1;
 }
 
 .container {

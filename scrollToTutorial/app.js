@@ -1,30 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  ScrollTrigger.create({
-    animation: gsap.from('.logo', {
-      y: '50vh',
-      scale: 6,
-      yPercent: -50,
-    }),
-    scrub: true,
-    trigger: '.content',
-    start: 'top bottom',
-    endTrigger: '.content',
-    end: 'top center',
+  // Logo Animation
+  gsap.to('.logo', {
+    y: '-45vh',
+    scale: 0.2,
+    yPercent: -50,
+    scrollTrigger: {
+      trigger: '.content',
+      start: 'top bottom',
+      end: 'top center',
+      scrub: true,
+    },
   });
 
-  ScrollTrigger.create({
-    animation: gsap.from('.landing-description', {
-      y: '50vh',
-      opacity: 1,
-      yPercent: -50,
-    }),
-    scrub: true,
-    trigger: '.content',
-    start: 'top bottom',
-    endTrigger: '.content',
-    end: 'top center',
+  // Landing description animation
+  gsap.to('.landing-description', {
+    y: '-55vh',
+    opacity: 0,
+    yPercent: -50,
+    scrollTrigger: {
+      trigger: '.content',
+      start: 'top bottom',
+      end: 'top center',
+      scrub: true,
+    },
   });
 });
 
