@@ -1,3 +1,7 @@
+.animation-container {
+  background-color: #e9bb45;
+}
+
 .image-container {
   display: flex;
   flex-direction: column;
